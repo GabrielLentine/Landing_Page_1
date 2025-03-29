@@ -1,0 +1,75 @@
+@media screen and (max-width: 760px) {
+  /* uma média p/ até 760px de largura */
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centralizar os elementos */
+  }
+
+  a {
+    padding: 10%;
+    font-size: 21px;
+  }
+
+  li {
+    display: block;
+    margin: 25px;
+    padding-left: 0px;
+  }
+
+  #sign-up-btn {
+    background-color: rgb(48, 48, 48);
+    border: 1px solid rgb(201, 14, 14);
+    padding: 6px;
+  }
+
+  #sign-up-btn:hover {
+    font-size: 22px;
+  }
+
+  #title {
+    line-height: 29px;
+    flex-direction: row;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    line-height: 20px;
+  }
+
+  p {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    line-height: 40px;
+  }
+
+  form {
+    margin: 0 auto; /* centralizar */
+    width: 60%; /* tudo em largura */
+  }
+
+  input {
+    align-self: center;
+  }
+
+  form input[type="submit"] {
+    width: 50%; /* tudo em largura */
+    height: 44px;
+    padding: 15px; /* espaçamento interno */
+    background-color: rgb(201, 14, 14); /* cor do botão */
+    cursor: pointer;
+  }
+
+  img {
+    display: none; /* tirar a imagem */
+  }
+}

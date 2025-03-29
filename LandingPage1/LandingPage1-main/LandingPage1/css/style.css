@@ -1,0 +1,135 @@
+body {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  font-family: poppinsregular; /* definindo a fonte do site */
+  max-width: 1200px; /* quando tiver mais elementos na tela, ele não espalhar em caso de monitores maiores */
+  margin: 0 auto; /* centralizar o site p/ monitores maiores */
+  padding: 15px; /* espaçamento interno */
+}
+
+header {
+  display: flex; /* cabeçalho flex-box */
+  flex-direction: row; /* alinhando em linha */
+  justify-content: space-between; /* espaço entre o title e os links */
+  align-items: center; /* alinhando os itens p/ o centro */
+}
+
+#title {
+  flex-direction: column; /* coluna fixa */
+  line-height: 10px; /*  "title1" e "title2" vão ficar mais juntos */
+}
+
+#title:hover {
+  color: rgb(201, 14, 14);
+  transition: 0.3s all; /* transição suave quando o mouse for passado em cima */
+  cursor: context-menu; /* cursor padrão */
+}
+
+li {
+  display: inline-block; /* deixando os links um do lado do outro */
+  margin: 20px; /* dando um espaçamento em cada link */
+}
+
+a {
+  color: white; /* definindo a cor do link */
+  text-decoration: none; /* removendo underline */
+  font-size: 17px;
+}
+
+a:hover {
+  color: rgb(201, 14, 14);
+  font-size: 22px;
+  text-decoration: underline;
+  transition: 0.477s all; /* transição suave quando o mouse for passado em cima */
+}
+
+#sign-up-btn {
+  font-size: 20px;
+  border: 2px solid rgb(201, 14, 14); /* colocando uma borda */
+  border-radius: 13px; /* arredondando a borda */
+  padding: 10px; /* a borda vem mais pra fora e o texto vai mais p/ o centro*/
+}
+
+#sign-up-btn:hover {
+  background-color: rgb(201, 14, 14);
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+main {
+  /* deixando o form e a imagem lado a lado */
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px; /* afastando um pouco do cabeçalho */
+}
+
+h2 {
+  font-size: 56px; /* aumentando a fonte */
+  line-height: 10px; /* aproximando as palavras */
+  font-family: poppinsmedium;
+}
+
+span {
+  color: rgb(179, 12, 12);
+}
+
+span:hover {
+  color: rgb(255, 2, 2);
+}
+
+p {
+  font-size: 22px; /* tamanho da fonte */
+  line-height: 35px; /* espaçamento */
+  max-width: 500px; /* largura máxima de 500px */
+  font-family: poppinslight;
+}
+
+img {
+  width: 370px; /* esticando a imagem */
+  height: 95%;
+  margin-top: calc(50px - 100px);
+  margin-left: 210px;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* campo email abaixo de nome */
+  width: 70%; /* largura de 70% */
+}
+
+form [type="text"] {
+  height: 20px;
+  width: 150%;
+}
+
+form [type="email"] {
+  margin-top: 20px;
+  height: 20px;
+  width: 150%;
+}
+
+form [type="submit"] {
+  height: 50px; /* altura */
+  width: 160%; /* largura */
+  background-color: rgb(201, 14, 14); /* intensidade da fonte */
+  color: white;
+}
+
+form [type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(255, 2, 2);
+}
+
+input {
+  margin-top: 20px; /* separando os campos */
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+}
